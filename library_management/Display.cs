@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 namespace library_management
 {
     public static class Display
-    {
-       public static void display_books()
+    {  /// <summary>
+       ///This function displays the information of the books in the library
+       /// </summary>
+        public static void display_books()
         {
             using (library_Db context = new library_Db())
             {
@@ -27,7 +29,10 @@ namespace library_management
                 } 
             }
         }
-
+        /// <summary>
+        /// This function is to display the information of a book specified by the identifier
+        /// </summary>
+        /// <param name="id"></param>
         public static void DisplayBookSpecefed(int id)
         {
             using (library_Db context = new library_Db())

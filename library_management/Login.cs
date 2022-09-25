@@ -8,9 +8,14 @@ using System.Threading.Tasks;
 namespace library_management
 {
    public static class Login
-    { 
-      public  static bool Authintcation(string user_name, string password)
-        {
+    { /// <summary>
+      /// This function is to check username and password
+      /// </summary>
+      /// <param name="user_name"></param>
+      /// <param name="password"></param>
+      /// <returns></returns>
+        public static bool Authintcation(string user_name, string password)
+      {
             using (library_Db context = new library_Db())
             {
 
@@ -27,6 +32,6 @@ namespace library_management
             }
 
          
-           }
+      }
     }
 }
